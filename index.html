@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            z-index: 1000;
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
+            overflow: hidden;
+        }
+
+        .navbar.scrolled {
+            background-color: #1a252f;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+        }
+
+        .navbar .menu a:hover {
+            color: #2c3e50;
+            background-color: white;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        .navbar .login {
+            padding: 10px 20px;
+            margin-right: 30px;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        .navbar .login:hover {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom right, #1a252f, #2c3e50);
+            color: white;
+            padding: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            animation: slideUp 1.5s ease;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            background-color: white;
+            color: #2c3e50;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #2c3e50;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Menu Sections */
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: #e8eef1;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 15px;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navbar .menu a {
+                padding: 10px 15px;
+            }
+
+            .navbar .login {
+                margin-top: 10px;
+                align-self: flex-end;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="navbar" id="navbar">
+        <div class="logo">MyWebsite</div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="login">Login</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to Our Professional Website</h1>
+        <p>Providing top-notch services tailored to your needs.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are committed to delivering high-quality services to our clients.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Discover the range of services we provide to meet your needs.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Take a look at some of our successful projects and satisfied clients.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information or to request a consultation.</p>
+    </section>
+
+    <script>
+        // Change navbar style on scroll
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
