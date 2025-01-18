@@ -4,6 +4,7 @@ In my internship, I got a task to create a landing page for a website th
 
 # Screenshots
 ![](https://github.com/Nitish1977/LandingPage/blob/581e7d7523db83d0986c5ff16cc04c794f0fce49/Screenshot%20(45).png)
+![](https://github.com/Nitish1977/LandingPage/blob/46044928b67f8a11cfdaae2fdca5756329b3ca57/Screenshot%20(82).png)
 
 
 
