@@ -2,6 +2,9 @@
 # LandingPage for a website
 In my internship, I got a task to create a landing page for a website that is offered by Prodigy Info Tech.
 
+# Screenshots
+![](https://github.com/Nitish1977/LandingPage/blob/581e7d7523db83d0986c5ff16cc04c794f0fce49/Screenshot%20(45).png)
+
 
 
 
